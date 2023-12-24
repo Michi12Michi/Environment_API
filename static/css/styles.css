@@ -1,0 +1,31 @@
+body {
+	font-family: "Lora", serif;
+	background-color: #FFECD6;
+	color: white;
+}
+
+.bg-body-tertiary {
+	padding-top: 50px; 
+}
+
+h1, h2 {
+	font-size: 45px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	color: #0F2167;
+}
+
+p, .form-label {
+	color: #4CB9E7;
+	font-size: 20px;
+}
+
+a {
+    color: #ffc107;
+}
+
+.space-above {
+	color: #000000;
+    margin-top: 20px;
+    padding-top: 20px;
+}

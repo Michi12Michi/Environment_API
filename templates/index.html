@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}Air quality{% endblock %}
+
+{% block content %}
+
+<div class="container my-5">
+	<div class="p-5 text-center bg-body-tertiary rounded-3">
+    <h1 class="text-body-emphasis">Air quality</h1>
+    <p class="col-lg-8 mx-auto fs-5">
+      Here you could check the air quality of any city...
+    </p>
+    <br>
+    <br>
+    <h2>Instructions:</h2>
+    <p class="col-lg-8 mx-auto fs-5">
+      Providing latitude and longitude, you will get CO, O<sub>3</sub>, SO<sub>2</sub>, PM 2.5 and PM 10 concentrations.
+    </p>
+    <div class="d-inline-flex gap-2 mb-5">
+      <a class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button" href={{url_for("search")}}>
+        Go to search
+      </a>
+      <a class="btn btn-outline-secondary btn-lg px-4 rounded-pill" type="button" href={{url_for("recent_searches")}}>
+        Search history
+      </a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

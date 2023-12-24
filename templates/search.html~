@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% from "bootstrap5/form.html" import render_form %}
+{% block title %}City search{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+	<div class="p-5 text-center bg-body-tertiary rounded-3">
+    
+      <h1>Please, insert latitude and longitude of your city</h1>
+		
+		<div class="container text-center col-3">
+			{{render_form(form)}}
+		</div>
+     
+
+	<a class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button" href={{url_for("search")}}>
+        Search
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}
